@@ -1,0 +1,20 @@
+{
+    "builders":[
+        {
+            "ami_name"  :   "alpha-ion-ami-{{timestamp}}",
+            "instance_type" :   "t2.micro",
+            "region"    :   "ap-south-1",
+            "tags"  :   {
+                "name": "packer-ami"
+            },
+            "ssh_username"  :   "ubuntu",
+            "type"  :   "amazon-eds"
+        }
+        ],
+        "provisioners" : [
+        {
+            "type" : "shell",
+            "script" : "./packer.sh"
+        }
+    ]
+}
