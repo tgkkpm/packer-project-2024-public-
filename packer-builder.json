@@ -14,7 +14,7 @@
         "provisioners" : [
         {
             "type" : "shell",
-            "script" : "./packer.sh"
+            "script" : "./packer-shell.sh"
         }
     ]
 }
