@@ -8,7 +8,7 @@
                 "name": "packer-ami"
             },
             "ssh_username"  :   "ubuntu",
-            "type"  :   "amazon-eds"
+            "type"  :   "amazon-ebs"
         }
         ],
         "provisioners" : [
